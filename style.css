@@ -59,6 +59,7 @@ body {
 
 .blog-preview:hover { box-shadow: 16px 16px 0 var(--Gray-950); }
 .blog-preview:hover .blog-title { color: var(--Yellow); }
+.blog-tag, .blog-title, .blog-author { cursor: pointer; }
 
 .preview-image {
     flex-grow: 1;
