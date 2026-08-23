@@ -58,8 +58,7 @@ body {
 }
 
 .blog-preview:hover { box-shadow: 16px 16px 0 var(--Gray-950); }
-.blog-preview:hover .blog-title { color: var(--Yellow); }
-.blog-tag, .blog-title, .blog-author { cursor: pointer; }
+.blog-preview:hover .blog-title a { color: var(--Yellow); }
 
 .preview-image {
     flex-grow: 1;
@@ -97,10 +96,15 @@ body {
     .blog-description { font-size: var(--fs-medium); }
 }
 
-.blog-author {
-    display: flex;
+.blog-author a {
+    display: inline-flex;
     align-items: center;
     gap: var(--space-3);
+}
+
+a {
+    text-decoration: none;
+    color: var(--Gray-950);
 }
 
 .blog-author-image { height: 32px; }
