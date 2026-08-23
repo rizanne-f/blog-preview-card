@@ -50,11 +50,15 @@ body {
     border-radius: 20px;
     background-color: var(--White);
     box-shadow: 8px 8px 0 var(--Gray-950);
+    transition: all 600ms;
 
     display: flex;
     flex-direction: column;
     gap: var(--space-4);
 }
+
+.blog-preview:hover { box-shadow: 16px 16px 0 var(--Gray-950); }
+.blog-preview:hover .blog-title { color: var(--Yellow); }
 
 .preview-image {
     flex-grow: 1;
