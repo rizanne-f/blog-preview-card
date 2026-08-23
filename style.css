@@ -11,4 +11,36 @@
     --fs-paragraph: 16px;
     --fw-medium: 500;
     --fw-extra-bold: 800;
+    --space-1: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Figtree", sans-serif;
+    background-color: var(--Yellow);
+}
+
+.blog-preview {
+    width: min-content;
+    padding: var(--space-1);
+    border: 1px solid black;
+    border-radius: var(--space-1);
+    background-color: var(--White);
+}
+
+.preview-image {
+    max-width: fit-content;
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: var(--space-1);
 }
