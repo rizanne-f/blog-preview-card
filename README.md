@@ -13,6 +13,7 @@ This is a solution for the Blog preview card challenge on Frontend Mentor.
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
     - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
   - [Author](#author)
 
 ## Overview
@@ -67,14 +68,15 @@ I also keep forgetting that we can change specific ancestor property when the pa
 
 ### Continued development
 
-In this exercise, I applied Media Queries to replace font sizes in Desktop screens but I would like to learn better practices regarding responsive font.
+Instead of using fixed units, I will consider if relative units will be more appropriate for the use case going forward.
 ```css
-@media screen and (min-width: 376px) {
-    .blog-tag, .date-published { font-size: var(--fs-small); }
-    .blog-title { font-size: var(--fs-large); }
-    .blog-description { font-size: var(--fs-medium); }
-}
+.blog-tag, .date-published, .blog-author { font-size: 0.75rem; }
+.blog-title { font-size: 1.25rem; }
 ```
+
+### Useful resources
+
+- [The Surprising Truth About Pixels and Accessibility](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/) - This helped me understand the difference between using pixels vs rem and em which is important for accessibility.
 
 ## Author
 
